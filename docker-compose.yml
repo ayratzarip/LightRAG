@@ -16,7 +16,7 @@ services:
       - ./config.ini:/app/config.ini
       - ./.env:/app/.env
     env_file:
-      - .env
+      - stack.env
     environment:
       - TIKTOKEN_CACHE_DIR=/app/data/tiktoken
     restart: unless-stopped
